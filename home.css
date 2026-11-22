@@ -317,23 +317,16 @@ text-decoration: none;
         flex-wrap: wrap;
     }
     .banner1,
-    .banner2{
-        width: 100%;
-        height: auto;
-    }
-    .cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .banner2,
+    .cards,
+    .cardss{
+        max-width: 100%;
+        box-sizing: border-box;
     }
     .card1-1,
     .card1-2{
         width: 100%;
     }
-    .cardss{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     .card2-1,
     .card2-2,
