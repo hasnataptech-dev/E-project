@@ -1,0 +1,328 @@
+ *{
+margin: 0%;
+padding: 0;
+box-sizing: border-box;
+}
+.container img{
+   border-radius: 6px;
+}
+.header{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+    color: white;
+    position: fixed;
+} 
+.navbar a{
+    text-decoration: none;
+    color: #0c3a22;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+ margin-top: 10px;
+ margin-left: 10px;   
+ width: 80px; 
+ border-radius: 6px;
+margin-right: 50px; 
+object-fit: contain;
+} 
+.nav-text h5{
+margin-top: 5px;
+margin-left: 5px;
+font-size: 20px;
+color: #d9bc00;
+}
+.nav-text p{
+margin-left: 9px ;
+font-size: 11px;
+color: #d9bc00;
+}
+.nav-links{
+padding: 0px;
+margin: 10px; 
+margin-top: 0;
+list-style: none;
+gap: 30px;
+display: flex;
+color: rgb(5, 73, 5); 
+} 
+nav ul a{
+list-style: none;
+gap: 30px;
+display: flex;
+font-family: 'Times New Roman', Times, serif;
+color: rgb(5, 73, 5); 
+}
+nav div{ 
+font-size: 15px; 
+font-weight: bold; 
+column-gap: 20px; 
+text-align: center; 
+} 
+.tag{
+display: flex;
+font-family: 'Times New Roman', Times, serif;
+color: rgb(235, 201, 9); 
+text-align: center;
+}
+.banner1{
+    background: linear-gradient(#072415, #69b161);
+    width: 100%;
+    padding: 50px 7%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.b1-text{
+    flex: 1;
+    max-width: 600px;
+}
+.b1-text h6{
+    color: #d9bc00;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+.b1-text h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    margin: 25px 0;
+    color: white;
+}
+.b1-text p{
+    font-size: 17px;
+    color: white;
+}
+.b1-text q{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    border-left:3px solid #f4e38c ;
+    padding-left: 15px;
+    margin: 25px 0;
+    color: white;
+}
+.b1-text button{
+    background: #f4e38c;
+    color: black;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.b1-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.b1-img img{
+    width: 100%;
+    max-width: 420px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+@media (max-widt:768px) {
+    .banner1{
+        flex-direction: column;
+        padding: 35px 20px;
+    }
+    .b1-text h1{
+        font-size: 55px;
+    }
+    .b1-img{
+        height: 350px;
+    }
+}
+.banner2{
+    background: linear-gradient(white,wheat, white);
+    width: 100%;
+    padding: 50px 7%;
+    box-sizing: border-box;
+    display: block;
+    align-items: center;
+}
+.b2-text{
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+}
+.b2-text h6{
+    color: #d9bc00;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+.b2-text h1{
+    width: 100%;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    margin: 25px 0;
+    color: rgb(8, 27, 5);
+}
+.b2-text p{
+    font-size: 17px;
+    color: rgb(14, 39, 12);
+}
+.cards{
+    width: 100%;
+    margin: 0px; 
+    background: linear-gradient(white,wheat, white);
+}
+.card-cont{
+    display: flex;
+    grid-template-columns: repeat(2 1fr);
+    gap: 300px;
+    width: 90%;
+    margin: auto;
+}
+.card1-1{
+    background: white;
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+.card1-1:hover{
+    transform: translateY(-8px);
+}
+.card1-2{
+    background: white;
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+.card1-2:hover{
+    transform: translateY(-8px);
+}
+@media (max-width:900px) {
+    .cards{
+        grid-template-columns: (2 1fr);
+    }   
+}
+@media (max-width:600px) {
+    .cards{
+        grid-template-columns: (1fr);
+        width: 90%;
+    }   
+}
+.card1-1 a{
+    background: #f4e38c;
+    color: black;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.card1-2 a{
+    background: #f4e38c;
+    color: black;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.cardss{
+    width: 100%;
+    margin: 40px 0px; 
+    background: linear-gradient(white,wheat, white);
+    align-items: center;
+    
+}
+.cards-cont{
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(2 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+.card2-1{
+    background: linear-gradient(#072415, #69b161);
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 12px;
+    padding: 20px;
+    color: #c1a90b;
+    flex: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.card2-2{
+    background: linear-gradient(#072415, #69b161);
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    color: #c1a90b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.card2-3{
+    background: linear-gradient(#072415, #69b161);
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 12px;
+    padding: 20px;
+    color: #c1a90b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 1;
+}
+@media (max-width:900px) {
+    .cardss{
+        grid-template-columns: (2 1fr);
+    }   
+}
+@media (max-width:600px) {
+    .cardss{
+        grid-template-columns: (1fr);
+        width: 90%;
+    }   
+}
+#footer{
+    display: flex;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-evenly;
+    align-content:end ;
+    padding: 20px 0px;
+    background-color: rgb(15, 63, 63);
+}
+#footer ul{
+    font-size: 15px;
+    list-style: none;
+    color: rgb(247, 223, 138);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#footer ul li{
+padding: 8px 0px;
+color: white;
+text-decoration: none;
+}
