@@ -7,21 +7,29 @@ box-sizing: border-box;
    border-radius: 6px;
 }
 .header{
-    flex-direction: column;
+    align-items: center;
+    padding: 12px 4px;
     width: 100%;
+    justify-content: space-between;
     display: flex;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+     background-color: white;
 }
 .navbar{
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
     margin: 10px;
+    list-style: none;
+    position: static;
+    display: flex;
 } 
 .navbar a{
     text-decoration: none;
     color: #0c3a22;
     font-weight: bold;
     font-size: 15px;
+    list-style: none;
 }
 .nav-logo{
     display: flex;
@@ -119,6 +127,11 @@ text-align: center;
     border-radius: 7px;
     font-weight: bold;
     cursor: pointer;
+}
+.b1-text button a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
 }
 .b1-img{
     flex: 1;
@@ -268,25 +281,207 @@ text-align: center;
     box-sizing: border-box;
     flex: 1;
 }
-#footer{
+.banner3{
+    background: linear-gradient(wheat, white,wheat);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+.b3-text{
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+.b3-text h6{
+    color: #d9bc00;
+    letter-spacing: 3px;
+    font-size: 13px;
+    
+}
+.b3-text h1{
+    width: 100%;
     display: flex;
-    grid-template-columns: repeat(5,1fr);
-    justify-content: space-evenly;
-    align-content:end ;
-    padding: 20px 0px;
-    background-color: rgb(15, 63, 63);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 65px;
+    margin: 25px 0;
+    color: rgb(8, 27, 5);
+   
 }
-#footer ul{
-    font-size: 15px;
-    list-style: none;
-    color: rgb(247, 223, 138);
+.cards3{
+    width: 100%;
+    margin: 0px; 
+    background: linear-gradient(wheat, white,wheat);
+    padding-bottom: 50px;
+    align-items: center;
+    
+}
+.cards3-cont{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+.cards3-cont p{
+color: #fff8e8;
+line-height: 1.6;
+}
+.card3-1{
+    background: linear-gradient(#072415, #69b161);
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 12px;
+    padding: 20px;
+    color: #c1a90b;
+    flex: 1;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-#footer ul li{
-padding: 8px 0px;
-color: white;
-text-decoration: none;
+.card3-1:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px #fbea6a;
 }
+.card3-2{
+    background: linear-gradient(#072415, #69b161);
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1;
+    color: #c1a90b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card3-2:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px #fbea6a;
+}
+.card3-3{
+    background: linear-gradient(#072415, #69b161);
+    border: 1px solid rgb(184, 178, 178);
+    border-radius: 12px;
+    padding: 20px;
+    color: #c1a90b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card3-3:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px #fbea6a;
+}
+.cards3 a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.cards3-cont img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+/* FOOTER */
+footer {
+    background: linear-gradient(#072415,#0c3a22,#08532c);
+    color: #fbea6a;
+    font-family: Arial, sans-serif;
+}
+footer section:first-child {
+    background-color: 072415;
+    border-bottom: 1px solid #ddd;
+    padding: 25px 5%;
+}
+
+footer section:first-child a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+footer section:first-child a:hover {
+    color: dodgerblue;
+}
+
+/* FOOTER CONTENT */
+footer .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer h6 {
+    color: #f3f66a;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* FOOTER LINKS */
+footer .container a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .container a:hover {
+    color: #007bff;
+    padding-left: 5px;
+}
+
+/* FOOTER ICONS */
+footer i {
+    margin-right: 5px;
+}
+
+/* COPYRIGHT */
+footer .text-center.p-4 {
+    background-color: #e9ecef;
+    font-size: 14px;
+    padding: 18px ;
+}
+
+footer .text-center.p-4 a {
+    text-decoration: none;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    footer section:first-child {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    footer .container {
+        text-align: center;
+    }
+footer .container > .row {
+    row-gap: 20px;
+    }
+footer h6 {
+    margin-bottom: 15px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     
 /* RESPONSIVE DESIGN */
@@ -428,7 +623,7 @@ text-decoration: none;
         margin: 20px 0;
     }
 
-    .cards-cont {
+    .cards-cont,.cards3-cont {
         display: flex;
         flex-direction: column;
         width: 90%;
@@ -437,10 +632,24 @@ text-decoration: none;
 
     .card2-1,
     .card2-2,
-    .card2-3 {
+    .card2-3,
+    .card3-1,
+    .card3-2,
+    .card3-3 {
         width: 100%;
     }
+    .banner3 {
+        width: 100%;
+        padding: 35px 20px;
+    }
+    .b3-text {
+        width: 100%;
+        max-width: 100%;
+    }
 
+    .b3-text h1 {
+        font-size: 40px;
+    }
     /* FOOTER */
     #footer {
         display: flex;
