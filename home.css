@@ -439,11 +439,11 @@ line-height: 1.6;
 }
 .cards4-cont{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0,1fr));
     gap: 30px;
     width: 90%;
     margin: 20px auto;
-    align-self: stretch;
+    box-sizing: border-box;
 }
 .cards4-cont p{
 color: #fff8e8;
@@ -456,17 +456,16 @@ line-height: 1.6;
 .card4-5,
 .card4-6{
     background: linear-gradient(#08532c,#69b161);
-    border: 1px solid rgb(184, 178, 178);
     border-radius: 12px;
     padding: 20px;
     color: #c1a90b;
-    flex: 1;
+    height: 100%;
+    min-width: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 300px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 footer {
@@ -535,8 +534,6 @@ footer .text-center.p-4 a {
     text-decoration: none;
 }
 
-
-@media screen and (max-width: 768px) {
 
 @media screen and (max-width: 768px) {
 
@@ -681,25 +678,27 @@ footer .text-center.p-4 a {
         margin: 20px 0;
     }
 
-    .cards-cont,.cards3-cont,.card4-cont {
+    .cards-cont,.cards3-cont{
         display: flex;
         flex-direction: column;
         width: 90%;
         gap: 15px;
     }
-
+    .cards4-cont{
+        grid-template-columns: repeat(2, 1fr);
+        width: 92%;
+        gap: 20px;
+    }
+    @media screen and (max-width:480px) {
+    .cards4-cont{
+        grid-template-columns: 1fr;
+    }}
     .card2-1,
     .card2-2,
     .card2-3,
     .card3-1,
     .card3-2,
-    .card3-3,
-    .card4-1,
-    .card4-2,
-    .card4-3,
-    .card4-4,
-    .card4-5,
-    .card4-6 {
+    .card3-3{
         width: 100%;
     }
     .banner3,
@@ -734,5 +733,4 @@ footer .text-center.p-4 a {
     margin-bottom: 15px;
     }
 
-}
 }
