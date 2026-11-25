@@ -39,7 +39,7 @@ box-sizing: border-box;
  margin-top: 10px;
  margin-left: 10px;   
  width: 80px; 
- border-radius: 6px;
+ border-radius: 60px;
 margin-right: 50px; 
 object-fit: contain;
 } 
@@ -433,6 +433,9 @@ line-height: 1.6;
     padding-bottom: 50px;
     align-items: center;
     
+}
+.cards4 img{
+    border-radius: 12px;
 }
 .cards4-cont{
     display: grid;
