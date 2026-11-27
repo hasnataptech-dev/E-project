@@ -12,7 +12,7 @@
     position: sticky;
     top: 0%;
     z-index: 1000;
-     background-color: white;
+     background-color: rgb(247, 245, 245);
 }
 .navbar{
     gap: 20px;
