@@ -14,7 +14,7 @@ navbar.innerHTML=`<div class="nav-logo">
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
     <li>
-    <a class="navbar-link" href="#">Home</a>
+    <a class="navbar-link" href="index.html">Home</a>
     </li> 
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -96,7 +96,7 @@ footer.innerHTML=`<section class="d-flex justify-content-center justify-content-
             <a href="#!" class="text-reset">Books & Works</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Awardsr</a>
+            <a href="#!" class="text-reset">Awards</a>
           </p>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
